@@ -1,4 +1,4 @@
-🛰️ SYSTEM ZARZĄDZANIA KATALOGIEM SATELITÓW W C++
+##🛰️ SYSTEM ZARZĄDZANIA KATALOGIEM SATELITÓW W C++
 Ten projekt to konsolowa aplikacja opracowana w języku C++ do efektywnego zarządzania danymi o satelitach. Implementacja ściśle wykorzystuje paradygmat Programowania Obiektowego (OOP), w tym dziedziczenie i polimorfizm.
 
 🌟 Kluczowe Cechy i Implementacja
