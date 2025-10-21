@@ -1,27 +1,27 @@
-🛰️ System Zarządzania Katalogiem Satelitów (C++)
-Ten projekt to konsolowa aplikacja napisana w C++, służąca do zarządzania katalogiem satelitów. Został zaimplementowany z wykorzystaniem obiektowości (OOP), w tym dziedziczenia i polimorfizmu, aby efektywnie obsługiwać różne typy satelitów (np. Satelita Podstawowy i Satelita Komunikacyjny).
+🛰️ SYSTEM ZARZĄDZANIA KATALOGIEM SATELITÓW W C++
+Ten projekt to konsolowa aplikacja opracowana w języku C++ do efektywnego zarządzania danymi o satelitach. Implementacja ściśle wykorzystuje paradygmat Programowania Obiektowego (OOP), w tym dziedziczenie i polimorfizm.
 
-🚀 Kluczowe Funkcjonalności
-Zarządzanie Danymi:
+🌟 Kluczowe Cechy i Implementacja
+🧬 Obiektowość i Hierarchia Klas
+Główna klasa Satelita jest bazą, przechowującą podstawowe parametry (nazwa, wysokość orbity, prędkość, czas życia).
 
-Dodawanie nowych satelitów (z podziałem na typy: podstawowy i komunikacyjny).
+Klasa pochodna SatelitaKomunikacyjny dziedziczy podstawowe cechy i dodaje specjalistyczny atrybut: częstotliwość komunikacji.
 
-Wyświetlanie pełnego katalogu satelitów.
+Wykorzystanie Polimorfizmu (metoda wirtualna wyswietlInfo()) do poprawnego wyświetlania informacji o różnych typach satelitów.
 
-Edycja i usuwanie istniejących obiektów z katalogu.
+💾 Trwałość Danych i I/O
+Funkcje zapiszDoPliku i wczytajZPliku umożliwiają trwałe przechowywanie i odtwarzanie całego katalogu z plików tekstowych.
 
-Hierarchia Klas (OOP): Wykorzystuje klasę bazową Satelita oraz klasę pochodną SatelitaKomunikacyjny, demonstrując dziedziczenie i metody wirtualne (wyswietlInfo()).
+Zaimplementowano mechanizmy obsługi strumieni (std::ostringstream) oraz operator przeładowania operator<< dla prostego zapisu obiektów.
 
-Trwałość Danych: Umożliwia zapis całego katalogu do pliku tekstowego oraz wczytywanie danych z pliku.
+✨ Zaawansowane Elementy C++
+Zarządzanie dynamicznymi obiektami satelitów odbywa się za pomocą Inteligentnych Wskaźników (std::unique_ptr), co zapewnia automatyczne i bezpieczne zarządzanie pamięcią.
 
-Analiza: Generowanie prostych statystyk katalogu (np. średnia wysokość orbity, maksymalna prędkość).
+Wykorzystanie algorytmów standardowych (std::find_if, std::remove_if) oraz wyrażeń lambda do wyszukiwania i usuwania satelitów.
 
-Zarządzanie Pamięcią: Zastosowanie inteligentnych wskaźników (std::unique_ptr) do bezpiecznego zarządzania dynamicznie alokowanymi obiektami.
+📊 Funkcjonalności Użytkownika
+CRUD (Tworzenie, Odczyt, Aktualizacja, Usuwanie) satelitów.
 
-🛠️ Technologie
-Język: C++ (z wykorzystaniem bibliotek standardowych: <iostream>, <fstream>, <vector>, <algorithm>, <sstream>).
+Edycja satelitów z walidacją wprowadzanych danych wejściowych, aby zapobiec błędom.
 
-Środowisko: Aplikacja konsolowa, zawiera również funkcje specyficzne dla Windows (<windows.h>) do obsługi plików.
-
-👥 Użycie
-Program jest obsługiwany za pomocą menu w konsoli, oferującego opcje od 1 do 7, umożliwiające interaktywne zarządzanie zbiorem satelitów.
+Generowanie prostych Statystyk (np. średnia wysokość orbity, maksymalna prędkość) dla całego katalogu.
